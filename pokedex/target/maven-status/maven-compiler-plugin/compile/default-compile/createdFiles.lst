@@ -1,0 +1,6 @@
+com\pokedex\Main.class
+com\pokedex\PokemonModel.class
+com\pokedex\servlet\PokemonServlet.class
+com\pokedex\model\Equipe.class
+com\pokedex\Pokedex.class
+com\pokedex\model\Usuario.class

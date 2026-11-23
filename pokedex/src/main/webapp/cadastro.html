@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+    <!-- CÍRCULOS DECORATIVOS -->
+     <div class="circulo circulo-1"></div>
+     <div class="circulo circulo-2"></div>
+     <div class="circulo circulo-3"></div>
+     <div class="circulo circulo-4"></div>
+
+    <main id="cadastro_usuario" class="cadastro_usuario">
+        <div id="form_login" class="form_login">
+
+
+            <div class="pokebola-container">
+                <img src="img/pokebola.png" alt="Pokébola" class="pokebola-img">
+            </div>
+
+            <h1>Criar Cadastro</h1>
+            <p>Crie sua conta para registrar novos Pokémon na sua jornada rumo a se tornar um Mestre</p>
+
+            <form action="/cadastro" method="post">
+
+                    <label for="nome" class="cadastro_nome">NOME COMPLETO</label>
+                    <div class="input-group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>
+                    </div>
+                    
+                    <label for="email" class="cadastro_email">EMAIL</label>
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+                    </div>
+                    
+                    <label for="senha" class="cadastro_senha">SENHA</label>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>   
+
+                <button type="submit" id="botao_Entrar">➡️Entrar</button>
+                
+            </form>
+
+            <p>Já tem uma conta? <a href="login.html">Voltar para o login</a></p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+
+                <h1>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" 
+                    alt="pokebola" class="pokebola-icon">Pokédex
+                </h1>
+
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar Pokémon">
+
+                    <button onclick="buscarPokemon()">🔍</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="filters">
+        <select id="tipoFilter">
+            <option value="">Todos os tipos</option>
+            <option value="Aço">Aço</option>
+            <option value="Água">Água</option>            
+            <option value="Dragão">Dragão</option>            
+            <option value="Elétrico">Elétrico</option>            
+            <option value="Fada">Fada</option>            
+            <option value="Fantasma">Fantasma</option>            
+            <option value="Fogo">Fogo</option>            
+            <option value="Gelo">Gelo</option>            
+            <option value="Inseto">Inseto</option>            
+            <option value="Lutador">Lutador</option>                        
+            <option value="Normal">Normal</option>            
+            <option value="Pedra">Pedra</option>            
+            <option value="Planta">Planta</option>            
+            <option value="Psíquico">Psíquico</option>            
+            <option value="Sombrio">Sombrio</option>            
+            <option value="Terra">Terra</option>            
+            <option value="Venenoso">Venenoso</option>            
+            <option value="Voador">Voador</option>                        
+
+        </select>
+
+        <button onclick="filtrarPorTipo()" class="btn-filter">🔍 Filtrar</button>
+
+        <button onclick="carregarTodos()" class="btn-refresh">🔄 Mostrar Todos</button>
+    </div>
+
+    <div class="container">
+        <div id="pokemonGrid" class="pokemon-grid">
+            <!--Os cards vão ser inseridos via JS-->
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <div id="detalhesPokemon">
+               <!--Conteúdo do modal será inserido aqui--> 
+            </div>
+        </div>
+
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">
+        <p>🔄 Carregando Pokémon...</p>
+    </div>
+            <script src="script.js"></script>
+</body>
+</html>

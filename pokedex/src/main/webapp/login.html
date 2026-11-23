@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pokédex</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+    <!-- CÍRCULOS DECORATIVOS -->
+     <div class="circulo circulo-1"></div>
+     <div class="circulo circulo-2"></div>
+     <div class="circulo circulo-3"></div>
+     <div class="circulo circulo-4"></div>
+
+    <main id="principal_login" class="principal_login">
+        <div id="form_login" class="form_login">
+
+            <div class="pokebola-container">
+                <img src="img/pokebola.png" alt="Pokébola" class="pokebola-img">
+            </div>
+
+            <h1>Pokédex Login</h1>
+            <p>Acesse sua conta para continuar gerenciando seus dados e treinadores</p>
+
+            <form action="/login" method="POST">
+    
+                <label for="email" class="Escrito_email">EMAIL</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+                </div>
+
+                <label for="senha" class="Escrito_senha">SENHA</label>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+            <button type="submit" id="botao_Entrar">➡️ Entrar</button>
+
+            </form>
+            
+            <a href="#">Esqueceu a senha?</a>
+
+            <p>
+                Não tem conta? <a href="cadastro.html">Criar cadastro</a>
+            </p>
+
+        </div>
+    </main>
+</body>
+</html>
